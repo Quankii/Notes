@@ -1,5 +1,4 @@
-    <ul id="notes">
+
         {%for note in notes%}
-        <li class="note"><p class="title-note"><b>{{note[1]}}</b></p><br><hr><p class="desk-note">{{note[2]}}</p></li>
+        <div class="flex-item note" title = {{note[2]}}><b>{{note[1]}}</b><hr></div>
         {%endfor%}
-    </ul>
